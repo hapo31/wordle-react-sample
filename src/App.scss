@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  .answer-input {
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .answer-button {
+    display: block;
+  }
+}
+
+.word-block_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .word-block_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+
+    &.incorrect {
+      background-color: #555;
+    }
+
+    &.contain {
+      background-color: #fc0;
+    }
+
+    &.correct {
+      background-color: #0c6;
+    }
+  }
+}
